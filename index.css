@@ -28,12 +28,20 @@
   font-weight: normal;
   font-style: normal;
 }
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   width: 100%;
   background-color: #faf9f9;
   color: #243421;
 }
+
 .top {
   position: relative;
 }
@@ -103,6 +111,10 @@ img {
   mask-repeat: no-repeat;
 }
 
+.middle__greeting {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
 .middle {
   font-family: "Pompadur", sans-serif;
   font-size: 20px;
