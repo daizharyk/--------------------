@@ -84,8 +84,8 @@ body {
 
 body {
   width: 100%;
-  background-color: #faf9f9;
-  color: #243421;
+  background-color: #faf9f9 !important;
+  color: #243421 !important;
 }
 
 .top {
