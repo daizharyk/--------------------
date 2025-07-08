@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const video = document.getElementById("introVideo");
+  const videoWrapper = document.getElementById("introVideoWrapper");
+  const siteContent = document.getElementById("siteContent");
+
+  const content = document.querySelector(".site-content");
+
+  video.addEventListener("ended", () => {
+    video.classList.add("hidden");
+    content.classList.add("visible");
+  });
+
   const track = document.querySelector(".slider__track");
   const slides = document.querySelectorAll(".slider__image");
   const btnLeft = document.querySelector(".slider__btn--left");
