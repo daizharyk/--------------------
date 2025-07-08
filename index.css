@@ -259,7 +259,11 @@ img {
   font-size: 17px;
   padding-right: 5px;
 }
+.middle__location-image img {
+    opacity: 0.9;
+}
 .middle__location-image {
+  
   width: 260px;
   -webkit-mask-image: linear-gradient(
     to bottom,
