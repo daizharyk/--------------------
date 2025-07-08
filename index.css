@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Diploma";
+  src: url("fonts/Diploma\ Script\ Basic\ RUS.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poiretone";
+  src: url("fonts/PoiretOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pompadur";
+  src: url("fonts/Pompadur.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kudry_weird-headline";
+  src: url("fonts/kudry_weird-headline.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+  background-color: #faf9f9;
+  color: #243421;
+}
+.top {
+  position: relative;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top__video {
+  margin-top: 20px;
+  width: 170px;
+}
+.top__image {
+  position: absolute;
+  opacity: 0.7;
+  top: -30px;
+  left: -30px;
+  width: 130px;
+  height: 130px;
+  -webkit-mask-image: linear-gradient(to left, transparent, black 70%);
+  mask-image: linear-gradient(to left, transparent, black 70%);
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.top__image_two {
+  right: -30px;
+  width: 130px;
+  opacity: 0.7;
+  height: 130px;
+  position: absolute;
+  top: -30px;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 70%);
+  mask-image: linear-gradient(to right, transparent, black 70%);
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  transform: rotate(-40deg);
+}
+
+.caple_one {
+  margin-top: 20px;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 30%,
+    black 60%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 30%,
+    black 60%,
+    transparent
+  );
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.middle {
+  font-family: "Pompadur", sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 30px;
+}
+
+.middle__names {
+  font-family: "Diploma", sans-serif;
+  font-size: 70px;
+}
