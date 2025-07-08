@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const music = document.getElementById("bgMusic");
   const button = document.getElementById("musicToggle");
-
+  music.volume = 0.7;
   if (music && button) {
     let isPlaying = false;
 
