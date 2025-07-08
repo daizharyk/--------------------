@@ -44,6 +44,12 @@
   font-style: normal;
   font-display: swap;
 }
+
+.parallax {
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+}
+
 html,
 body {
   width: 100%;
@@ -147,7 +153,7 @@ img {
 .middle__names {
   font-family: "Diploma", sans-serif;
   font-size: 70px;
-  padding: 0 0 20px 0;
+  padding: 40px 0 20px 0;
 }
 
 .middle__event {

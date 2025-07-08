@@ -81,4 +81,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.addEventListener("click", initPlayOnce);
   }
+
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+
+    document.querySelectorAll(".parallax").forEach((el) => {
+      if (!el) return;
+
+      const speed = parseFloat(el.dataset.speed) || 0.2;
+      let rotateDeg = 0;
+
+      el.style.transform = `translateY(${
+        -scrollY * speed
+      }px) rotate(${rotateDeg}deg)`;
+    });
+  });
 });
