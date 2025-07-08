@@ -22,9 +22,18 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "kudry_weird-headline";
-  src: url("fonts/kudry_weird-headline.otf") format("truetype");
+  font-family: "CormorantGaramond";
+  src: url("fonts/CormorantGaramond-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CormorantGaramond-normal";
+  src: url("fonts/CormorantGaramond-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -112,19 +121,127 @@ img {
 }
 
 .middle__greeting {
-  margin-bottom: 30px;
   font-size: 30px;
 }
+.middle__text {
+  font-size: 23px;
+  line-height: 1.5;
+  margin: 30px 20px;
+}
 .middle {
-  font-family: "Pompadur", sans-serif;
+  font-family: "CormorantGaramond", sans-serif;
   font-size: 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 30px;
+  position: relative;
 }
 
 .middle__names {
   font-family: "Diploma", sans-serif;
   font-size: 70px;
+  padding: 0 0 20px 0;
+}
+
+.middle__event {
+  font-family: "CormorantGaramond-normal", sans-serif;
+  font-size: 20px;
+}
+
+.middle__date {
+  text-transform: uppercase;
+  padding-top: 20px;
+  font-size: 30px;
+  font-family: "CormorantGaramond-normal", sans-serif;
+}
+
+.middle__day-time {
+  font-family: "CormorantGaramond-normal", sans-serif;
+  text-transform: uppercase;
+  padding: 5px 0 20px 0;
+  font-size: 20px;
+}
+.middle__image_flower {
+  left: -90px;
+  top: 50px;
+  opacity: 0.3;
+  position: absolute;
+  -webkit-mask-image: linear-gradient(to left, transparent, black 70%);
+  mask-image: linear-gradient(to left, transparent, black 70%);
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+.middle__image {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 20%,
+    black 70%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 20%,
+    black 70%,
+    transparent
+  );
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.middle__location-title {
+  margin: 50px 0 20px 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "poiretone", sans-serif;
+}
+
+.middle__location-name {
+  display: flex;
+  font-family: "CormorantGaramond-normal", sans-serif;
+  align-items: center;
+  padding: 10px;
+}
+.middle__location-text {
+  font-size: 15px;
+  padding-right: 5px;
+}
+.middle__location-image {
+  width: 260px;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 20%,
+    black 70%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 20%,
+    black 70%,
+    transparent
+  );
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+.middle__restaurant-name {
+  font-size: 20px;
+}
+
+.middle__map-link {
+  display: block;
+  border: 1px solid #8a8a8a;
+
+  margin: 0 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #030303;
+  font-family: "poiretone", sans-serif;
 }
