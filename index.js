@@ -50,4 +50,35 @@ document.addEventListener("DOMContentLoaded", function () {
   track.addEventListener("touchend", () => {
     isSwiping = false;
   });
+
+  const music = document.getElementById("bgMusic");
+  const button = document.getElementById("musicToggle");
+
+  if (music && button) {
+    let isPlaying = false;
+
+    const startMusic = () => {
+      music.play().catch(() => {}); // на случай авто-блокировки
+      isPlaying = true;
+      button.textContent = "||";
+    };
+
+    button.addEventListener("click", () => {
+      if (isPlaying) {
+        music.pause();
+        button.textContent = "▶︎";
+      } else {
+        music.play().catch(() => {});
+        button.textContent = "||";
+      }
+      isPlaying = !isPlaying;
+    });
+
+    const initPlayOnce = () => {
+      startMusic();
+      document.removeEventListener("click", initPlayOnce);
+    };
+
+    document.addEventListener("click", initPlayOnce);
+  }
 });

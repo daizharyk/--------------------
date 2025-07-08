@@ -165,7 +165,7 @@ img {
 .middle__day-time {
   font-family: "CormorantGaramond-normal", sans-serif;
   text-transform: uppercase;
-  padding: 5px 0 20px 0;
+  padding-top: 5px;
   font-size: 20px;
 }
 .middle__image_flower {
@@ -212,7 +212,7 @@ img {
   padding: 10px;
 }
 .middle__location-text {
-  font-size: 15px;
+  font-size: 17px;
   padding-right: 5px;
 }
 .middle__location-image {
@@ -235,7 +235,7 @@ img {
   mask-repeat: no-repeat;
 }
 .middle__restaurant-name {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .middle__map-link {
@@ -253,13 +253,15 @@ a {
   font-family: "poiretone", sans-serif;
 }
 
+.footer {
+  position: relative;
+}
 .footer__text {
   text-align: center;
   margin: 50px 0 20px 0;
   font-family: "Diploma", sans-serif;
   font-size: 40px;
 }
-
 
 .slider {
   position: relative;
@@ -315,4 +317,43 @@ a {
 
 .slider__btn--right {
   right: 10px;
+}
+.music-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  z-index: 9999;
+  position: absolute;
+  bottom: 30px;
+
+  right: 10px;
+  align-items: center;
+  row-gap: 5px;
+}
+.music-button {
+  border-radius: 50%;
+
+  width: 60px;
+
+  height: 60px;
+  font-size: 25px;
+  color: #e0d396;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center; /* по вертикали */
+  justify-content: center; /* по горизонтали */
+  line-height: 1; /* отключаем лишнюю высоту строки */
+}
+.music-label {
+  font-size: 20px;
+  font-family: "Diploma", sans-serif;
+}
+.middle__image_two {
+  position: absolute;
+  bottom: 90px;
+  transform: rotate(-120deg);
+  opacity: 0.3;
+  width: 70%;
+  right: -80px;
 }
