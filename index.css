@@ -404,11 +404,3 @@ a {
   right: -80px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html,
-  body,
-  * {
-    background-color: #faf9f9 !important;
-    color: #243421 !important;
-  }
-}
