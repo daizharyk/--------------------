@@ -260,10 +260,9 @@ img {
   padding-right: 5px;
 }
 .middle__location-image img {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 .middle__location-image {
-  
   width: 260px;
   -webkit-mask-image: linear-gradient(
     to bottom,
@@ -403,4 +402,13 @@ a {
   opacity: 0.2;
   width: 70%;
   right: -80px;
+}
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body,
+  * {
+    background-color: #faf9f9 !important;
+    color: #243421 !important;
+  }
 }
