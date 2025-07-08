@@ -132,6 +132,17 @@ img {
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .middle__greeting {
   font-size: 30px;
@@ -186,6 +197,7 @@ img {
   mask-repeat: no-repeat;
 }
 .middle__image {
+  top: 150px;
   -webkit-mask-image: linear-gradient(
     to bottom,
     transparent,
